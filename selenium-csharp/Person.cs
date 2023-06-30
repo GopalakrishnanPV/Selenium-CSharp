@@ -29,5 +29,10 @@ namespace csharp_selenium
 		{
 			Console.WriteLine("Hello from " + name);
 		}
+
+		public virtual void SayHello()
+		{
+			Console.WriteLine("Hello");
+		}
 	}
 }
