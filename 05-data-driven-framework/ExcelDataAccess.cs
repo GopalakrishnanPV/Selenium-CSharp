@@ -18,14 +18,15 @@ namespace _05_data_driven_framework
 
 		public static HomepageData? GetTestData(string keyName)
 		{
-			using (var connection = new OleDbConnection(TestDataFileConnection()))
-			{
-				connection.Open();
-				var query = string.Format("select * from [DataSet$] where key='{0}'", keyName);
-				var value = connection.Query<HomepageData>(query).FirstOrDefault();
-				connection.Close();
-				return value;
-			}
+			//using (var connection = new OleDbConnection(TestDataFileConnection()))
+			//{
+			//	connection.Open();
+			//	var query = string.Format("select * from [DataSet$] where key='{0}'", keyName);
+			//	var value = connection.Query<HomepageData>(query).FirstOrDefault();
+			//	connection.Close();
+			//	return value;
+			//}
+			return null;
 		}
 	}
 }

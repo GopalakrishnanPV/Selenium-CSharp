@@ -9,7 +9,7 @@ namespace _04_page_object_model
 		{
 			IWebDriver driver = new ChromeDriver();
 			driver.Manage().Window.Maximize();
-			driver.Url = "https://www.auto-bot-demo.vercel.app";
+			driver.Url = "https://auto-bot-demo.vercel.app/";
 			driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
 			HomePage homePage = new HomePage(driver);
