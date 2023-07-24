@@ -29,16 +29,19 @@ namespace _05_data_driven_framework
 
 		public void EnterName(string name)
 		{
+			nameTextBox.Clear();
 			nameTextBox.SendKeys(name);
 		}
 
 		public void EnterAge(int age)
 		{
+			ageTextBox.Clear();
 			ageTextBox.SendKeys($"{age}");
 		}
 
 		public void EnterEmail(string email)
 		{
+			emailTextBox.Clear();
 			emailTextBox.SendKeys(email);
 		}
 	}
