@@ -9,22 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\HomepageData.xlsx" />
+    <None Remove="Data\HomePageData.xlsx" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Data\HomepageData.xlsx">
+    <Content Include="Data\HomePageData.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.102.0" />
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.3.0" />
-    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
-    <PackageReference Include="Selenium.WebDriver" Version="4.10.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.11.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="115.0.5790.10200" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
 </Project>
