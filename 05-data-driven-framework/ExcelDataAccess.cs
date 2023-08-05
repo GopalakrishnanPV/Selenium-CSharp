@@ -10,6 +10,17 @@ namespace _05_data_driven_framework
 {
 	internal class ExcelDataAccess
 	{
+
+		private static void CreateWorkbook(string filePath)
+		{
+			if (!File.Exists(filePath))
+			{
+				XLWorkbook wbook = new XLWorkbook();
+				wbook.AddWorksheet(1);
+				wbook.SaveAs(filePath);
+			}
+		}
+
 		public static string ReadCellValue(string filePath, string cellAddress)
 		{
 			using (var wbook = new XLWorkbook(filePath))
@@ -19,6 +30,17 @@ namespace _05_data_driven_framework
 				return data;
 			}
 		}
+		public static void WriteCellValue(string filePath, string cellAddress, string cellValue)
+		{
+			CreateWorkbook(filePath);
+			using (var wbook = new XLWorkbook(filePath))
+			{
+				var wsheet = wbook.Worksheet(1);
+				var data = wsheet.Cell(cellAddress).Value = cellValue;
+				wbook.SaveAs(filePath);
+			}
+		}
+
 
 		public static DataSet ReadExcelAsDataTable(string filePath)
 		{

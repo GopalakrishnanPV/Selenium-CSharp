@@ -10,29 +10,28 @@ namespace _05_data_driven_framework
 	{
 		static void Main(string[] args)
 		{
-			IWebDriver driver = new ChromeDriver();
-			driver.Manage().Window.Maximize();
-			driver.Url = "https://auto-bot-demo.vercel.app/";
-			driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+			//IWebDriver driver = new ChromeDriver();
+			//driver.Manage().Window.Maximize();
+			//driver.Url = "https://auto-bot-demo.vercel.app/";
+			//driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
 
-			//var name = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "A2");
-			//var age = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "B2");
-			//var email = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "C2");
+			////var name = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "A2");
+			////var age = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "B2");
+			////var email = ExcelDataAccess.ReadCellValue("Data\\HomepageData.xlsx", "C2");
 
-			HomePage homePage = new HomePage(driver);
+			//HomePage homePage = new HomePage(driver);
 
 
-			var dataSet = ExcelDataAccess.ReadExcelAsDataTable("Data\\HomepageData.xlsx");
+			//var dataSet = ExcelDataAccess.ReadExcelAsDataTable("Data\\HomepageData.xlsx");
 
-			foreach (DataRow row in dataSet.Tables["Sheet1"].Rows)
-			{
-				homePage.EnterName(row["Name"].ToString());
-				homePage.EnterAge(int.Parse(row["Age"].ToString()));
-				homePage.EnterEmail(row["Email"].ToString());
-
-			}
-
+			//foreach (DataRow row in dataSet.Tables["Sheet1"].Rows)
+			//{
+			//	homePage.EnterName(row["Name"].ToString());
+			//	homePage.EnterAge(int.Parse(row["Age"].ToString()));
+			//	homePage.EnterEmail(row["Email"].ToString());
+			//}
+			ExcelDataAccess.WriteCellValue("D:\\TestData\\Homepage.xlsx", "A4", "Test Value");
 		}
 	}
 }

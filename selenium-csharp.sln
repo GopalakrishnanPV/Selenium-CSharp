@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-reporting-and-logging", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-page-object-model", "04-page-object-model\04-page-object-model.csproj", "{2E6EC46A-4FBA-48B9-ABE2-68CCC6E0556B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-data-driven-framework", "05-data-driven-framework\05-data-driven-framework.csproj", "{A1D51FD2-C36B-431E-9390-34BBF365348C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-data-driven-framework", "05-data-driven-framework\05-data-driven-framework.csproj", "{A1D51FD2-C36B-431E-9390-34BBF365348C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowDemo", "SpecFlowDemo\SpecFlowDemo.csproj", "{C42B0372-D77D-4A56-85D1-A1F46A778686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A1D51FD2-C36B-431E-9390-34BBF365348C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1D51FD2-C36B-431E-9390-34BBF365348C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1D51FD2-C36B-431E-9390-34BBF365348C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42B0372-D77D-4A56-85D1-A1F46A778686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42B0372-D77D-4A56-85D1-A1F46A778686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42B0372-D77D-4A56-85D1-A1F46A778686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42B0372-D77D-4A56-85D1-A1F46A778686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
