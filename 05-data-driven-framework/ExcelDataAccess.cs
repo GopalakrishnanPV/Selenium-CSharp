@@ -15,9 +15,11 @@ namespace _05_data_driven_framework
 		{
 			if (!File.Exists(filePath))
 			{
-				XLWorkbook wbook = new XLWorkbook();
-				wbook.AddWorksheet(1);
-				wbook.SaveAs(filePath);
+				using (var wbook = new XLWorkbook())
+				{
+					wbook.AddWorksheet(1);
+					wbook.SaveAs(filePath);
+				}
 			}
 		}
 

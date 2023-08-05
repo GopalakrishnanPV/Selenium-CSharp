@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-page-object-model", "04-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-data-driven-framework", "05-data-driven-framework\05-data-driven-framework.csproj", "{A1D51FD2-C36B-431E-9390-34BBF365348C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowDemo", "SpecFlowDemo\SpecFlowDemo.csproj", "{C42B0372-D77D-4A56-85D1-A1F46A778686}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowDemo", "SpecFlowDemo\SpecflowDemo.csproj", "{C42B0372-D77D-4A56-85D1-A1F46A778686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
